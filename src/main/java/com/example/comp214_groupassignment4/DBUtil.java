@@ -35,12 +35,10 @@ public class DBUtil {
         }
     }
 
-
    public static void updateBasket (int item_code, String item_name, String item_options, int quantity, int item_price, int item_total, int item_subtotal) throws SQLException {
     dbConnect();
     try
     {
-
         String sql = "UPDATE" + item_code + item_name + item_options + quantity + item_price + item_total + item_subtotal;
         statement.executeUpdate(sql);
         System.out.println( item_code + item_name + item_options + quantity + item_price + item_total + item_subtotal);

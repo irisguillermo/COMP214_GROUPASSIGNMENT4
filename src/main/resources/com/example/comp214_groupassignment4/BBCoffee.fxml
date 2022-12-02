@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp214_groupassignment4.BBCoffee">
+   <children>
+      <Pane layoutX="23.0" layoutY="70.0" prefHeight="340.0" prefWidth="584.0" style="-fx-background-color: yellow;">
+         <children>
+            <Hyperlink fx:id="department_hyperlink" layoutX="14.0" layoutY="14.0" text="DEPARTMENT" />
+            <Hyperlink fx:id="basket_hyperlink" layoutX="111.0" layoutY="14.0" text="BASKET" />
+            <Hyperlink fx:id="checkout_hyperlink" layoutX="179.0" layoutY="14.0" text="CHECK OUT" />
+            <Hyperlink fx:id="search_hyperlink" layoutX="269.0" layoutY="14.0" text="SEARCH" />
+            <Hyperlink fx:id="accont_hyperlink" layoutX="346.0" layoutY="14.0" text="ACCOUNT" />
+            <Hyperlink fx:id="ordertatus_hyperlink" layoutX="439.0" layoutY="14.0" text="ORDER STATUS" />
+            <TableView fx:id="itemTable" layoutX="25.0" layoutY="70.0" prefHeight="200.0" prefWidth="528.0">
+              <columns>
+                <TableColumn fx:id="itemcode" prefWidth="75.0" text="ITEM CODE" />
+                <TableColumn fx:id="name" prefWidth="75.0" text="NAME" />
+                  <TableColumn fx:id="options" prefWidth="75.0" text="OPTIONS" />
+                  <TableColumn fx:id="qty" prefWidth="75.0" text="QTY" />
+                  <TableColumn fx:id="price" prefWidth="75.0" text="PRICE" />
+                  <TableColumn fx:id="total" prefWidth="75.0" text="TOTAL" />
+                  <TableColumn fx:id="subtotal" prefWidth="75.0" text="SUBTOTAL" />
+              </columns>
+            </TableView>
+            <Button fx:id="updatebasket_button" layoutX="246.0" layoutY="286.0" mnemonicParsing="false" onAction="#onUpdateBasketButtonClick" text="Update Basket" />
+            <Button fx:id="emptybasket_button" layoutX="365.0" layoutY="286.0" mnemonicParsing="false" onAction="#onEmptyBasketButtonClick" text="Empty Basket" />
+            <Button fx:id="checkout_button" layoutX="470.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCheckOutButtonClick" prefHeight="25.0" prefWidth="83.0" text="Check Out" />
+            <Button fx:id="continue_button" layoutX="100.0" layoutY="286.0" mnemonicParsing="false" onAction="#onContinueButtonClick" text="Continue Shopping" />
+         </children>
+      </Pane>
+      <Label layoutX="77.0" layoutY="14.0" text="Brewbean's Coffee Shop" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

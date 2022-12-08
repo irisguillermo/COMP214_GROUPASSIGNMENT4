@@ -1,18 +1,14 @@
 package com.example.comp214_groupassignment4;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.GridPane;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.Types;
 
-public class checkStock {
+public class CheckStock {
 
     @FXML
     private TextField productID;

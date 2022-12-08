@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="436.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp214_groupassignment4.checkStock">
+<AnchorPane prefHeight="436.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp214_groupassignment4.CheckStock">
    <children>
       <Label layoutX="52.0" layoutY="38.0" text="CHECK STOCK FOR A BASKET">
          <font>

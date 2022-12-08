@@ -6,15 +6,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp214_groupassignment4.addItemsToBasketController">
+>
    <children>
-      <Label layoutX="52.0" layoutY="38.0" text="CHECK STOCK FOR BASKET">
+      <Label layoutX="52.0" layoutY="38.0" text="ADD ITEMS TO BASKET">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Button fx:id="saveChanges" layoutX="218.0" layoutY="155.0" mnemonicParsing="false" onAction="#OnSaveChanges" text="Check" />
+      <Button fx:id="addItemBtn" layoutX="228.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnSAveChangesButton" text="Add Item" />
       <Label layoutX="53.0" layoutY="100.0" text="Basket ID" />
-      <TextField fx:id="productID1" layoutX="168.0" layoutY="96.0" prefHeight="26.0" prefWidth="186.0" text="8" />
+      <TextField fx:id="basketId_txtfld" layoutX="168.0" layoutY="96.0" prefHeight="26.0" prefWidth="186.0" text="8" />
+      <Label layoutX="53.0" layoutY="139.0" text="Product ID" />
+      <TextField fx:id="productid_txtfld" layoutX="168.0" layoutY="135.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="52.0" layoutY="183.0" text="Price" />
+      <TextField fx:id="price_txtfld" layoutX="168.0" layoutY="179.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="53.0" layoutY="220.0" text="Quantity" />
+      <TextField fx:id="quantity_txtfld" layoutX="168.0" layoutY="216.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="51.0" layoutY="263.0" text="Size" />
+      <TextField fx:id="size_txtfld" layoutX="168.0" layoutY="259.0" prefHeight="26.0" prefWidth="186.0" text="1" />
+      <Label layoutX="51.0" layoutY="263.0" text="Size" />
+      <TextField fx:id="form_txtfld" layoutX="168.0" layoutY="259.0" prefHeight="26.0" prefWidth="186.0" text="1" />
    </children>
 </AnchorPane>

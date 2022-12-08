@@ -118,8 +118,8 @@ public class EditDescription {
             String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
             statement = connection.prepareCall(query);
             statement = connection.prepareStatement(query);
-=======
-            String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
+
+            query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
             statement = connection.prepareCall(query);
 
             statement.setInt(1, parseInt(productID.getText()));

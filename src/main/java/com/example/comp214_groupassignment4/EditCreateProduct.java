@@ -6,9 +6,7 @@ import javafx.scene.control.*;
 
 public class EditCreateProduct {
 
-    public TableColumn rule, currency, combination, group, customer, impact, fixedPrice, action, period, qty;
-    public TableView specificTable;
-
+    public TextField rule, currency, combination, group, customer, impact, fixedPrice, action, period, qty;
     public Button addPrice, cancelBtn, saveStaybtn, saveBtn, cancelBtn2,saveStaybtn2,saveBtn2 ;
     public ComboBox shop,group2,currency2, country2;
     public CheckBox checkbox1;

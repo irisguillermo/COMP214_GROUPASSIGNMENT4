@@ -1,21 +1,16 @@
 package com.example.comp214_groupassignment4;
-
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.TableColumn;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
 
 import java.sql.SQLException;
-
 public class BBCoffee {
-
-
-    int item_code;
-
     String item_name;
 
     String item_options;
 
+    int item_code;
     int quantity;
 
     int item_price;
@@ -24,8 +19,7 @@ public class BBCoffee {
 
     int item_subtotal;
 
-//constructor
-    public BBCoffee(int item_code, String item_name, String item_options,  int quantity, int  item_price, int item_total, int item_subtotal)
+    public BBCoffee(int item_code, String item_name, String item_options, int quantity, int  item_price, int item_total, int item_subtotal)
     {
         this.item_code = item_code;
         this.item_name = item_name;
@@ -37,8 +31,6 @@ public class BBCoffee {
     }
 
     //getters and setters
-
-
     public int getItem_code() {
         return item_code;
     }
@@ -93,33 +85,5 @@ public class BBCoffee {
 
     public void setItem_subtotal(int item_subtotal) {
         this.item_subtotal = item_subtotal;
-    }
-
-    //------------------------------------------------------
-    public Hyperlink department_hyperlink;
-    public Hyperlink basket_hyperlink;
-    public Hyperlink checkout_hyperlink;
-    public Hyperlink search_hyperlink;
-    public Hyperlink accont_hyperlink;
-    public Hyperlink ordertatus_hyperlink;
-    public TableColumn itemcode;
-    public TableColumn name;
-    public TableColumn options;
-    public TableColumn qty;
-    public TableColumn price;
-    public TableColumn total;
-    public TableColumn subtotal;
-
-    public void onUpdateBasketButtonClick(ActionEvent actionEvent) throws SQLException {
-        
-    }
-
-    public void onEmptyBasketButtonClick(ActionEvent actionEvent) {
-    }
-
-    public void onCheckOutButtonClick(ActionEvent actionEvent) {
-    }
-
-    public void onContinueButtonClick(ActionEvent actionEvent) {
     }
 }

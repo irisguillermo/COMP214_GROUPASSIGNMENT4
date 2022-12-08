@@ -113,8 +113,15 @@ public class EditDescription {
         try {
             connection = DBUtil.dbConnect();
             connection.setAutoCommit(false);
+
+//            String query = "EXECUTE CHANGE_PROD_DES_SP (?, ?);";
             String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
             statement = connection.prepareCall(query);
+            statement = connection.prepareStatement(query);
+=======
+            String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
+            statement = connection.prepareCall(query);
+
             statement.setInt(1, parseInt(productID.getText()));
             statement.setString(2, newDescription.getText());
             statement.executeUpdate();

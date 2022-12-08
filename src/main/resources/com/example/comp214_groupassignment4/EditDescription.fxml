@@ -13,10 +13,10 @@
             <Font size="23.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="74.0" text="PRODUCT ID" />
-      <Label layoutX="285.0" layoutY="74.0" text="NEW DESCRIPTION" />
-      <TextField fx:id="productID" layoutX="33.0" layoutY="103.0" />
-      <TextField fx:id="newDescription" layoutX="285.0" layoutY="104.0" />
-      <Button fx:id="saveChanges" layoutX="313.0" layoutY="149.0" mnemonicParsing="false" onAction="#OnSaveChanges" text="Save Changes" />
+      <Label layoutX="33.0" layoutY="95.0" text="PRODUCT ID" />
+      <Label layoutX="258.0" layoutY="95.0" text="NEW DESCRIPTION" />
+      <TextField fx:id="productID" layoutX="33.0" layoutY="123.0" />
+      <TextField fx:id="newDescription" layoutX="258.0" layoutY="123.0" prefHeight="26.0" prefWidth="284.0" />
+      <Button fx:id="saveChanges" layoutX="382.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnSaveChanges" prefHeight="26.0" prefWidth="160.0" text="Save Changes" />
    </children>
 </AnchorPane>

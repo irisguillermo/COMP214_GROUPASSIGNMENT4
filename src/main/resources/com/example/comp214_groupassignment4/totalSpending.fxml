@@ -2,11 +2,13 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp214_groupassignment4.TotalSpending">
    <children>
       <Label layoutX="52.0" layoutY="38.0" text="TOTAL SPENDING REPORT">
          <font>
@@ -16,7 +18,11 @@
       <Label layoutX="52.0" layoutY="93.0" text="Shopper ID" />
       <TextField fx:id="productID" layoutX="167.0" layoutY="88.0" prefHeight="26.0" prefWidth="260.0" text="10" />
       <Button fx:id="saveChanges" layoutX="274.0" layoutY="155.0" mnemonicParsing="false" onAction="#OnSaveChanges" text="Enter" />
-      <Label layoutX="52.0" layoutY="218.0" text="Total Spending:" />
-      <Label layoutX="184.0" layoutY="218.0" text="\$100" />
+      <TableView layoutX="64.0" layoutY="209.0" prefHeight="152.0" prefWidth="453.0">
+        <columns>
+          <TableColumn prefWidth="240.0" text="Shopper ID" />
+          <TableColumn minWidth="0.0" prefWidth="212.0" text="Total Spending" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

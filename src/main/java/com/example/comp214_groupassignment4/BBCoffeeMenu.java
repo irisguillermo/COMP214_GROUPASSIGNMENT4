@@ -56,9 +56,21 @@ public class BBCoffeeMenu {
         stage.show();
     }
 
-    public void reportItemInStockBtn(ActionEvent actionEvent) {
+    public void reportItemInStockBtn(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(CheckStock.class.getResource("checkStock.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        Stage stage = new Stage();
+        stage.setTitle("Report 1: Check item in stock");
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public void reportCalculateTotalSpendingBtn(ActionEvent actionEvent) {
+    public void reportCalculateTotalSpendingBtn(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(TotalSpending.class.getResource("totalSpending.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        Stage stage = new Stage();
+        stage.setTitle("Report 1: Check item in stock");
+        stage.setScene(scene);
+        stage.show();
     }
 }

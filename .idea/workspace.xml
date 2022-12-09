@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="added stored procedure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/TotalSpendingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/TotalSpending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/TotalSpending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/totalSpending.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/totalSpending.fxml" afterDir="false" />
+
     <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="EditCreateProfile file completed - except code. GUI completed for editcreateprofile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/checkStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/checkStock.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/checkStock.fxml" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,29 +48,29 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2INGLUuCg9S67sjemFP0PErMfP5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Ben/Downloads/Lesson12&13Examples (2)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wingjoanne/Downloads/COMP214_GROUPASSIGNMENT4 2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.comp214_groupassignment4" />
@@ -121,12 +135,12 @@
       <option name="project" value="LOCAL" />
       <updated>1670464087562</updated>
     </task>
-    <task id="LOCAL-00003" summary="EditCreateProfile file completed - except code. GUI completed for editcreateprofile">
-      <created>1670527055832</created>
+    <task id="LOCAL-00003" summary="added stored procedure">
+      <created>1670541068296</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1670527055832</updated>
+      <updated>1670541068296</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -136,7 +150,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -144,27 +170,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EditCreateProfile file completed - except code. GUI completed for editcreateprofile" />
-    <option name="LAST_COMMIT_MESSAGE" value="EditCreateProfile file completed - except code. GUI completed for editcreateprofile" />
+    <MESSAGE value="added stored procedure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stored procedure" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand>
-      <path>
-        <item name="COMP214_GROUPASSIGNMENT4" type="b2602c69:ProjectViewProjectNode" />
-        <item name="COMP214_GROUPASSIGNMENT4" type="462c0819:PsiDirectoryNode" />
-      </path>
-      <path>
-        <item name="COMP214_GROUPASSIGNMENT4" type="b2602c69:ProjectViewProjectNode" />
-        <item name="COMP214_GROUPASSIGNMENT4" type="462c0819:PsiDirectoryNode" />
-        <item name="src" type="462c0819:PsiDirectoryNode" />
-      </path>
-      <path>
-        <item name="COMP214_GROUPASSIGNMENT4" type="b2602c69:ProjectViewProjectNode" />
-        <item name="COMP214_GROUPASSIGNMENT4" type="462c0819:PsiDirectoryNode" />
-        <item name="src" type="462c0819:PsiDirectoryNode" />
-        <item name="main" type="462c0819:PsiDirectoryNode" />
-      </path>
-    </expand>
-    <select />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/checkStock.java</url>
+          <line>31</line>
+          <properties class="com.example.comp214_groupassignment4.checkStock">
+
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckStock.java</url>
+          <line>27</line>
+          <properties class="com.example.comp214_groupassignment4.CheckStock" method="OnSaveChanges">
+
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COMP214_GROUPASSIGNMENT4$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1670339963925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

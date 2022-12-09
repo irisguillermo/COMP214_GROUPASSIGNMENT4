@@ -114,24 +114,15 @@ public class EditDescription {
             connection = DBUtil.dbConnect();
             connection.setAutoCommit(false);
 
-//            String query = "EXECUTE CHANGE_PROD_DES_SP (?, ?);";
             String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
             statement = connection.prepareCall(query);
             statement = connection.prepareStatement(query);
-=======
-            String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
-            statement = connection.prepareCall(query);
 
             statement.setInt(1, parseInt(productID.getText()));
             statement.setString(2, newDescription.getText());
             statement.executeUpdate();
             System.out.println(query);
-            int count = statement.executeUpdate();
-            if (count == 1) {
-                this.alert("Success", "New description has updated successfully", Alert.AlertType.INFORMATION);
-            } else {
-                this.alert("Failure", "Some error while updating description", Alert.AlertType.ERROR);
-            }
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

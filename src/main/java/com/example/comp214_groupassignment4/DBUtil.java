@@ -15,8 +15,8 @@ public class DBUtil {
     public static Connection dbConnect() throws SQLException {
         //Connect to database
         String dbURL = "jdbc:oracle:thin:@199.212.26.208:1521:SQLD";
-        String username = "COMP214_F22_er_26"; //WING'S DB
-        //String username = "COMP214_F22_ER_10"; //HEBA'S DB
+        //String username = "COMP214_F22_er_26"; //WING'S DB
+        String username = "COMP214_F22_ER_10"; //HEBA'S DB
         String password = "password";
         try {
             connection = DriverManager.getConnection(dbURL, username, password);

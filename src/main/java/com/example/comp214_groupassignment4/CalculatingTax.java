@@ -28,13 +28,18 @@ public class CalculatingTax {
         try {
             connection = DBUtil.dbConnect();
             connection.setAutoCommit(false);
-            String query = "{CALL TAX_COST_SP (?, ?)}";
+            String query = "{EXECUTE TAX_COST_SP (?, ?, ?)}";
             statement = connection.prepareCall(query);
             statement.setString(1, productID.getText());
             statement.setInt(2, parseInt(productID1.getText()));
-            //statement.executeQuery();
+           // statement.addBatch();
+            statement.executeBatch();
             System.out.println(query);
-            taxField.setText(query);
+            // taxField.setText(p_tax);
+           // String p_tax = statement.getString(1);
+
+           // statement.close();
+
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -56,16 +61,7 @@ public class CalculatingTax {
         }
 
     }
-    /*
-    public void alert(String title, String message, Alert.AlertType alertType) {
-        Alert alert = new Alert(alertType);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
 
-     */
 
 
 }

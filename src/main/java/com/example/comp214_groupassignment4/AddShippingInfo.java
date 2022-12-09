@@ -34,20 +34,16 @@ import static java.lang.Integer.parseInt;
             try {
                 connection = DBUtil.dbConnect();
                 connection.setAutoCommit(false);
-                String query = "{CALL STATUS_SHIP_SP (?, ?, ?, ?)}";
+                String query = "{EXECUTE STATUS_SHIP_SP (?, ?, ?, ?)}";
                 statement = connection.prepareCall(query);
-                statement.setInt(1, parseInt(productID.getText()));
-                statement.setString(2, productID1.getText());
-                statement.setString(3, shipDate.toString());
-                statement.setString(4, productID11.getText());
-                // statement.executeUpdate();
+
+                    statement.setInt(1, parseInt(productID.getText()));
+                    statement.setString(2, productID1.getText());
+                    statement.setString(3, shipDate.toString());
+                    statement.setString(4, productID11.getText());
+                 //   statement.addBatch();
+                statement.executeBatch();
                 System.out.println(query);
-                int count = statement.executeUpdate();
-                if (count == 1) {
-                    this.alert("Success", "shipping info has been added successfully", Alert.AlertType.INFORMATION);
-                } else {
-                    this.alert("Failure", "error while adding shipping info", Alert.AlertType.ERROR);
-                }
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -69,12 +65,6 @@ import static java.lang.Integer.parseInt;
             }
         }
 
-        public void alert(String title, String message, Alert.AlertType alertType) {
-            Alert alert = new Alert(alertType);
-            alert.setTitle(title);
-            alert.setHeaderText(null);
-            alert.setContentText(message);
-            alert.showAndWait();
-        }
+
     }
 

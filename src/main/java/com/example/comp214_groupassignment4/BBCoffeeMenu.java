@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class BBCoffeeMenu {
 
@@ -36,10 +37,23 @@ public class BBCoffeeMenu {
     public void updateOrderStatusBtn(ActionEvent actionEvent) {
     }
 
-    public void AddItemsToBasketBtn(ActionEvent actionEvent) {
+    public void AddItemsToBasketBtn(ActionEvent actionEvent) throws SQLException, IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(addItemsToBasket.class.getResource("addItemsToBasket.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        stage.setTitle("Task 5: Add Item To Basket");
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public void checkSaleProductsBtn(ActionEvent actionEvent) {
+
+    public void checkSaleProductsBtn(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(CheckSale.class.getResource("CheckSale.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        stage.setTitle("Task 6: Check Sale");
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void reportItemInStockBtn(ActionEvent actionEvent) throws IOException {

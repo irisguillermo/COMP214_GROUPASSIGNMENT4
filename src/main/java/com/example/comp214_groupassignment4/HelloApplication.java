@@ -11,7 +11,10 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
+
+
         //FXMLLoader fxmlLoader = new FXMLLoader(TotalSpending.class.getResource("totalSpending.fxml"));
+
 
         FXMLLoader fxmlLoader = new FXMLLoader(BBCoffeeMenu.class.getResource("BBCoffeeMenu.fxml"));
 

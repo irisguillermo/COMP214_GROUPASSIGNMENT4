@@ -16,13 +16,13 @@
          </font>
       </Label>
       <Label layoutX="52.0" layoutY="93.0" text="Shopper ID" />
-      <TextField fx:id="productID" layoutX="167.0" layoutY="88.0" prefHeight="26.0" prefWidth="260.0" text="10" />
-      <Button fx:id="saveChanges" layoutX="274.0" layoutY="155.0" mnemonicParsing="false" onAction="#OnSaveChanges" text="Enter" />
-      <TableView layoutX="64.0" layoutY="209.0" prefHeight="152.0" prefWidth="453.0">
-        <columns>
-          <TableColumn prefWidth="240.0" text="Shopper ID" />
-          <TableColumn minWidth="0.0" prefWidth="212.0" text="Total Spending" />
-        </columns>
-      </TableView>
+      <TextField fx:id="shopperID" layoutX="167.0" layoutY="88.0" prefHeight="26.0" prefWidth="260.0" text="21" />
+      <Button fx:id="saveChanges" layoutX="441.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnSaveChanges" text="Enter" />
+       <TableView fx:id="tableView" layoutX="50.0" layoutY="136.0" prefHeight="225.0" prefWidth="467.0">
+           <columns>
+               <TableColumn fx:id="idshopper" prefWidth="226.0" text="Shopper ID" />
+               <TableColumn fx:id="total" minWidth="0.0" prefWidth="224.0" text="Total Spending" />
+           </columns>
+       </TableView>
    </children>
 </AnchorPane>

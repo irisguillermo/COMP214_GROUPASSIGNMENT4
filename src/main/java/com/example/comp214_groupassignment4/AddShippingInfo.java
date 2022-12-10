@@ -14,10 +14,10 @@ import static java.lang.Integer.parseInt;
         private TextField productID;
 
         @FXML
-        private TextField productID1;
+        private TextField shipper;
 
         @FXML
-        private TextField productID11;
+        private TextField shippingNum;
 
         @FXML
         private Button saveChanges;
@@ -28,20 +28,17 @@ import static java.lang.Integer.parseInt;
         @FXML
         void OnSaveChanges(ActionEvent event) throws SQLException {
             Connection connection = DBUtil.dbConnect();
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO bb_basketstatus(idbasket, dtstage, shipper, shippingnum) VALUES(?, ?, ?, ?)");
+            PreparedStatement statement = connection.prepareStatement("{CALL STATUS_SHIP_SP (?, ?, ?, ?)");
             try {
                 //connection = DBUtil.dbConnect();
 
                         statement.setInt(1, parseInt(productID.getText()));
-                        statement.setString(2, shipDate.toString());
-                        statement.setString(3, productID1.getText());
-                        statement.setString(4, productID11.getText());
+                        statement.setString(2, String.valueOf(shipDate.getValue()));
+                        statement.setString(3, shipper.getText());
+                        statement.setString(4, shippingNum.getText());
                         statement.addBatch();
 
-
                 statement.executeBatch();
-                //statement.executeUpdate();
-
 
             } catch (Exception e) {
                 e.printStackTrace();

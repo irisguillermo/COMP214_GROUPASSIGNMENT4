@@ -5,10 +5,11 @@ import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
+import java.sql.Types;
 import static java.lang.Integer.parseInt;
 
 public class CalculatingTax {
@@ -25,21 +26,18 @@ public class CalculatingTax {
     void OnSaveChanges(ActionEvent event) {
         Connection connection = null;
         PreparedStatement statement = null;
+        CallableStatement cst = null;
         try {
             connection = DBUtil.dbConnect();
-            connection.setAutoCommit(false);
-            String query = "{EXECUTE TAX_COST_SP (?, ?, ?)}";
-            statement = connection.prepareCall(query);
-            statement.setString(1, productID.getText());
-            statement.setInt(2, parseInt(productID1.getText()));
-           // statement.addBatch();
-            statement.executeBatch();
-            System.out.println(query);
-            // taxField.setText(p_tax);
-           // String p_tax = statement.getString(1);
+            cst = connection.prepareCall("{CALL TAX_COST_SP (?, ?, ?)}");
+            cst.setString(1, productID.getText());
+            cst.setInt(2, parseInt(productID1.getText()));
+            cst.registerOutParameter(3, Types.VARCHAR);
 
-           // statement.close();
-
+            cst.execute();
+            String result = cst.getString(3);
+            System.out.println(result);
+             taxField.setText(result);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,7 +59,4 @@ public class CalculatingTax {
         }
 
     }
-
-
-
 }

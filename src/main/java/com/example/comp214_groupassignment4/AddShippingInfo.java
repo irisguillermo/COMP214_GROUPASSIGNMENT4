@@ -5,9 +5,7 @@ package com.example.comp214_groupassignment4;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 import static java.lang.Integer.parseInt;
 
@@ -28,22 +26,22 @@ import static java.lang.Integer.parseInt;
         private  DatePicker shipDate;
 
         @FXML
-        void OnSaveChanges(ActionEvent event) {
-            Connection connection = null;
-            PreparedStatement statement = null;
+        void OnSaveChanges(ActionEvent event) throws SQLException {
+            Connection connection = DBUtil.dbConnect();
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO bb_basketstatus(idbasket, dtstage, shipper, shippingnum) VALUES(?, ?, ?, ?)");
             try {
-                connection = DBUtil.dbConnect();
-                connection.setAutoCommit(false);
-                String query = "{EXECUTE STATUS_SHIP_SP (?, ?, ?, ?)}";
-                statement = connection.prepareCall(query);
+                //connection = DBUtil.dbConnect();
 
-                    statement.setInt(1, parseInt(productID.getText()));
-                    statement.setString(2, productID1.getText());
-                    statement.setString(3, shipDate.toString());
-                    statement.setString(4, productID11.getText());
-                 //   statement.addBatch();
+                        statement.setInt(1, parseInt(productID.getText()));
+                        statement.setString(2, shipDate.toString());
+                        statement.setString(3, productID1.getText());
+                        statement.setString(4, productID11.getText());
+                        statement.addBatch();
+
+
                 statement.executeBatch();
-                System.out.println(query);
+                //statement.executeUpdate();
+
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -55,12 +53,10 @@ import static java.lang.Integer.parseInt;
                         e.printStackTrace();
                     }
                 }
-                if (null != connection) {
-                    try {
-                        connection.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
         }

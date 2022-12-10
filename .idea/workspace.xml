@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="EditCreateProfile file completed - except code. GUI completed for editcreateprofile">
+    <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="addshippingInfo - changes made to try to insert a row into table">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/AddShippingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/AddShippingInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CalculatingTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CalculatingTax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/EditDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/EditDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EditCreateProfile file completed - except code. GUI completed for editcreateprofile" />
-    <option name="LAST_COMMIT_MESSAGE" value="EditCreateProfile file completed - except code. GUI completed for editcreateprofile" />
+    <MESSAGE value="addshippingInfo - changes made to try to insert a row into table" />
+    <option name="LAST_COMMIT_MESSAGE" value="addshippingInfo - changes made to try to insert a row into table" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COMP214_GROUPASSIGNMENT4$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1670339963925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

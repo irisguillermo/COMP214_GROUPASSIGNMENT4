@@ -1,0 +1,101 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8355e2e1-7d95-4346-82ec-8af0b9dc5562\" name=\"Changes\" comment=\"EditCreateProfile file completed - except code. GUI completed for editcreateprofile\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2INGLUuCg9S67sjemFP0PErMfP5\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/wingjoanne/Downloads/COMP214_GROUPASSIGNMENT4 2&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.example.comp214_groupassignment4\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.HelloApplication\">\n    <configuration name=\"DBUtil\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.comp214_groupassignment4.DBUtil\" />\n      <module name=\"COMP214_GROUPASSIGNMENT4\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.comp214_groupassignment4.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"openjdk-19\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.comp214_groupassignment4.HelloApplication\" />\n      <module name=\"COMP214_GROUPASSIGNMENT4 2\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.comp214_groupassignment4.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n        <item itemvalue=\"Application.DBUtil\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8355e2e1-7d95-4346-82ec-8af0b9dc5562\" name=\"Changes\" comment=\"\" />\n      <created>1670014574857</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1670014574857</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"EditCreateProfile file completed - except code. GUI completed for editcreateprofile\">\n      <created>1670024160157</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670024160158</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"EditCreateProfile file completed - except code. GUI completed for editcreateprofile\">\n      <created>1670464087562</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670464087562</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"EditCreateProfile file completed - except code. GUI completed for editcreateprofile\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"EditCreateProfile file completed - except code. GUI completed for editcreateprofile\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/COMP214_GROUPASSIGNMENT4$HelloApplication.ic\" NAME=\"HelloApplication Coverage Results\" MODIFIED=\"1670339963925\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\n      <FILTER>com.example.comp214_groupassignment4.*</FILTER>\n    </SUITE>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6c93074c698ff66eaff4f7d633dae6e928b136c1)
++++ b/.idea/workspace.xml	(date 1670522330544)
+@@ -6,6 +6,9 @@
+   <component name="ChangeListManager">
+     <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="EditCreateProfile file completed - except code. GUI completed for editcreateprofile">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/EditDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/EditProductDescription.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+Index: src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.comp214_groupassignment4;\n\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class BBCoffeeMenu {\n\n    public BBCoffeeMenu() {\n\n    }\n    @FXML\n    public Button editProductDescription, createNewProduct, calculateTaxForOrder, updateOrderStatus, AddItemsToBasket, checkSaleProducts, reportItemInStock, reportCalculateTotalSpending;\n\n\n    public void editProductDescriptionBtn(javafx.event.ActionEvent actionEvent) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(EditDescription.class.getResource(\"EditDescription.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load(), 600, 450);\n        Stage stage = new Stage();\n        stage.setTitle(\"Task 1: Edit Product Description\");\n        stage.setScene(scene);\n        stage.show();\n    }\n\n    public void createNewProductBtn(ActionEvent actionEvent) {\n    }\n\n    public void calculateTaxForOrderBtn(ActionEvent actionEvent) {\n    }\n\n    public void updateOrderStatusBtn(ActionEvent actionEvent) {\n    }\n\n    public void AddItemsToBasketBtn(ActionEvent actionEvent) {\n    }\n\n    public void checkSaleProductsBtn(ActionEvent actionEvent) {\n    }\n\n    public void reportItemInStockBtn(ActionEvent actionEvent) {\n    }\n\n    public void reportCalculateTotalSpendingBtn(ActionEvent actionEvent) {\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java b/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java
+--- a/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java	(revision 6c93074c698ff66eaff4f7d633dae6e928b136c1)
++++ b/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java	(date 1670522330430)
+@@ -19,7 +19,7 @@
+ 
+ 
+     public void editProductDescriptionBtn(javafx.event.ActionEvent actionEvent) throws IOException {
+-        FXMLLoader fxmlLoader = new FXMLLoader(EditDescription.class.getResource("EditDescription.fxml"));
++        FXMLLoader fxmlLoader = new FXMLLoader(EditProductDescription.class.getResource("EditProductDescription.fxml"));
+         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+         Stage stage = new Stage();
+         stage.setTitle("Task 1: Edit Product Description");
+Index: src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import javafx.scene.control.Button?>\n<?import javafx.scene.layout.AnchorPane?>\n<?import javafx.scene.text.Font?>\n<?import javafx.scene.text.Text?>\n\n<AnchorPane prefHeight=\"450.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/19\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.comp214_groupassignment4.BBCoffeeMenu\">\n   <children>\n      <Button fx:id=\"editProductDescription\" layoutX=\"50.0\" layoutY=\"143.0\" mnemonicParsing=\"false\" onAction=\"#editProductDescriptionBtn\" prefHeight=\"25.0\" prefWidth=\"223.0\" text=\"Edit Product Description\">\n         <font>\n            <Font name=\"Tahoma\" size=\"13.0\" />\n         </font>\n      </Button>\n      <Text layoutX=\"100.0\" layoutY=\"94.0\" strokeType=\"OUTSIDE\" strokeWidth=\"0.0\" text=\"Brewbean’s Coffee Shop\" textAlignment=\"CENTER\" wrappingWidth=\"400.02099609375\">\n         <font>\n            <Font name=\"Tahoma\" size=\"35.0\" />\n         </font>\n      </Text>\n      <Button fx:id=\"createNewProduct\" layoutX=\"50.0\" layoutY=\"206.0\" mnemonicParsing=\"false\" onAction=\"#createNewProductBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Create New Product\">\n         <font>\n            <Font name=\"Tahoma\" size=\"13.0\" />\n         </font></Button>\n      <Button fx:id=\"calculateTaxForOrder\" layoutX=\"50.0\" layoutY=\"265.0\" mnemonicParsing=\"false\" onAction=\"#calculateTaxForOrderBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Calculate Tax for Order\" />\n      <Button fx:id=\"updateOrderStatus\" layoutX=\"326.0\" layoutY=\"143.0\" mnemonicParsing=\"false\" onAction=\"#updateOrderStatusBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Update Order Status\" />\n      <Button fx:id=\"AddItemsToBasket\" layoutX=\"326.0\" layoutY=\"206.0\" mnemonicParsing=\"false\" onAction=\"#AddItemsToBasketBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Add Items to Basket\" />\n      <Button fx:id=\"checkSaleProducts\" layoutX=\"326.0\" layoutY=\"265.0\" mnemonicParsing=\"false\" onAction=\"#checkSaleProductsBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Check Sale Products\" />\n      <Button fx:id=\"reportItemInStock\" layoutX=\"189.0\" layoutY=\"328.0\" mnemonicParsing=\"false\" onAction=\"#reportItemInStockBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Report - Item In Stock\" />\n      <Button fx:id=\"reportCalculateTotalSpending\" layoutX=\"189.0\" layoutY=\"383.0\" mnemonicParsing=\"false\" onAction=\"#reportCalculateTotalSpendingBtn\" prefHeight=\"26.0\" prefWidth=\"223.0\" text=\"Report - Calculate Total Spending\" />\n   </children>\n</AnchorPane>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml b/src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml
+--- a/src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml	(revision 6c93074c698ff66eaff4f7d633dae6e928b136c1)
++++ b/src/main/resources/com/example/comp214_groupassignment4/BBCoffeeMenu.fxml	(date 1670521918758)
+@@ -17,15 +17,15 @@
+             <Font name="Tahoma" size="35.0" />
+          </font>
+       </Text>
+-      <Button fx:id="createNewProduct" layoutX="50.0" layoutY="206.0" mnemonicParsing="false" onAction="#createNewProductBtn" prefHeight="26.0" prefWidth="223.0" text="Create New Product">
++      <Button fx:id="createNewProduct" layoutX="50.0" layoutY="193.0" mnemonicParsing="false" onAction="#createNewProductBtn" prefHeight="26.0" prefWidth="223.0" text="Create New Product">
+          <font>
+             <Font name="Tahoma" size="13.0" />
+          </font></Button>
+-      <Button fx:id="calculateTaxForOrder" layoutX="50.0" layoutY="265.0" mnemonicParsing="false" onAction="#calculateTaxForOrderBtn" prefHeight="26.0" prefWidth="223.0" text="Calculate Tax for Order" />
++      <Button fx:id="calculateTaxForOrder" layoutX="50.0" layoutY="246.0" mnemonicParsing="false" onAction="#calculateTaxForOrderBtn" prefHeight="26.0" prefWidth="223.0" text="Calculate Tax for Order" />
+       <Button fx:id="updateOrderStatus" layoutX="326.0" layoutY="143.0" mnemonicParsing="false" onAction="#updateOrderStatusBtn" prefHeight="26.0" prefWidth="223.0" text="Update Order Status" />
+-      <Button fx:id="AddItemsToBasket" layoutX="326.0" layoutY="206.0" mnemonicParsing="false" onAction="#AddItemsToBasketBtn" prefHeight="26.0" prefWidth="223.0" text="Add Items to Basket" />
+-      <Button fx:id="checkSaleProducts" layoutX="326.0" layoutY="265.0" mnemonicParsing="false" onAction="#checkSaleProductsBtn" prefHeight="26.0" prefWidth="223.0" text="Check Sale Products" />
++      <Button fx:id="AddItemsToBasket" layoutX="326.0" layoutY="193.0" mnemonicParsing="false" onAction="#AddItemsToBasketBtn" prefHeight="26.0" prefWidth="223.0" text="Add Items to Basket" />
++      <Button fx:id="checkSaleProducts" layoutX="326.0" layoutY="246.0" mnemonicParsing="false" onAction="#checkSaleProductsBtn" prefHeight="26.0" prefWidth="223.0" text="Check Sale Products" />
+       <Button fx:id="reportItemInStock" layoutX="189.0" layoutY="328.0" mnemonicParsing="false" onAction="#reportItemInStockBtn" prefHeight="26.0" prefWidth="223.0" text="Report - Item In Stock" />
+-      <Button fx:id="reportCalculateTotalSpending" layoutX="189.0" layoutY="383.0" mnemonicParsing="false" onAction="#reportCalculateTotalSpendingBtn" prefHeight="26.0" prefWidth="223.0" text="Report - Calculate Total Spending" />
++      <Button fx:id="reportCalculateTotalSpending" layoutX="189.0" layoutY="376.0" mnemonicParsing="false" onAction="#reportCalculateTotalSpendingBtn" prefHeight="26.0" prefWidth="223.0" text="Report - Calculate Total Spending" />
+    </children>
+ </AnchorPane>
+Index: src/main/java/com/example/comp214_groupassignment4/EditDescription.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/comp214_groupassignment4/EditDescription.java b/src/main/java/com/example/comp214_groupassignment4/EditProductDescription.java
+rename from src/main/java/com/example/comp214_groupassignment4/EditDescription.java
+rename to src/main/java/com/example/comp214_groupassignment4/EditProductDescription.java
+--- a/src/main/java/com/example/comp214_groupassignment4/EditDescription.java	(revision 6c93074c698ff66eaff4f7d633dae6e928b136c1)
++++ b/src/main/java/com/example/comp214_groupassignment4/EditProductDescription.java	(date 1670522330421)
+@@ -96,9 +96,9 @@
+ 
+ import static java.lang.Integer.parseInt;
+ 
+-public class EditDescription {
++public class EditProductDescription {
+ 
+-    public EditDescription() {
++    public EditProductDescription() {
+     }
+ 
+     @FXML
+@@ -118,8 +118,6 @@
+             String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
+             statement = connection.prepareCall(query);
+             statement = connection.prepareStatement(query);
+-=======
+-            String query = "{CALL CHANGE_PROD_DES_SP (?, ?)}";
+             statement = connection.prepareCall(query);
+ 
+             statement.setInt(1, parseInt(productID.getText()));

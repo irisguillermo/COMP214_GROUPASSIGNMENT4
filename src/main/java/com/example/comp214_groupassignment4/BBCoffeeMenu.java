@@ -20,7 +20,7 @@ public class BBCoffeeMenu {
 
 
     public void editProductDescriptionBtn(javafx.event.ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(EditDescription.class.getResource("EditDescription.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(EditProductDescription.class.getResource("EditProductDescription.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         Stage stage = new Stage();
         stage.setTitle("Task 1: Edit Product Description");

@@ -96,9 +96,9 @@ import java.sql.SQLException;
 
 import static java.lang.Integer.parseInt;
 
-public class EditDescription {
+public class EditProductDescription {
 
-    public EditDescription() {
+    public EditProductDescription() {
     }
 
     @FXML

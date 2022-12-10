@@ -17,13 +17,15 @@ import static java.lang.Integer.parseInt;
 
 public class addItemsToBasketController {
 
+
+
     public Button addItemBtn;
 
 @FXML
-    public TextField basketId_txtfld, productid_txtfld, price_txtfld, quantity_txtfld, size_txtfld, form_fld;
+    public TextField basketId_txtfld, productID_txtfld, price_txtfld, quantity_txtfld, size_txtfld, form_fld;
 
 
-    public void OnSAveChangesButton(ActionEvent actionEvent) throws SQLException{
+    public void OnSAveChangesButton(ActionEvent actionEvent) {
         Connection connection = null;
         PreparedStatement statement = null;
         try{
@@ -37,7 +39,8 @@ public class addItemsToBasketController {
             query = "{BASKET_ADD_SP (?, ? , ?, ? ,? ,?)}";
             statement = connection.prepareCall(query);
 
-            statement.setInt(1, parseInt(productid_txtfld.getId()));
+
+            statement.setInt(1, Integer.parseInt(productID_txtfld.getId()));
             statement.setInt(2, parseInt(basketId_txtfld.getId()));
             statement.setInt(3, parseInt(price_txtfld.getId()));
             statement.setInt(4, parseInt(quantity_txtfld.getId()));
@@ -77,4 +80,5 @@ public class addItemsToBasketController {
 
     private void alert(String title, String message, Alert.AlertType alertType) {
     }
+
 }

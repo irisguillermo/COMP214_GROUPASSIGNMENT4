@@ -37,7 +37,13 @@ public class BBCoffeeMenu {
         stage.show();
     }
 
-    public void calculateTaxForOrderBtn(ActionEvent actionEvent) {
+    public void calculateTaxForOrderBtn(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(CalculatingTax.class.getResource("CalculatingTax.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        Stage stage = new Stage();
+        stage.setTitle("Task 2: Add New Product");
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void updateOrderStatusBtn(ActionEvent actionEvent) {

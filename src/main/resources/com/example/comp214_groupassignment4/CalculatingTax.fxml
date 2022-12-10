@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp214_groupassignment4.CalculatingTax">
    <children>
       <Label layoutX="52.0" layoutY="38.0" text="CALCULATING TAX ">
          <font>
@@ -17,8 +17,8 @@
       <TextField fx:id="productID" layoutX="167.0" layoutY="88.0" prefHeight="26.0" prefWidth="260.0" text="VA" />
       <Button fx:id="saveChanges" layoutX="229.0" layoutY="174.0" mnemonicParsing="false" onAction="#OnSaveChanges" text="Enter" />
       <Label layoutX="52.0" layoutY="218.0" text="Tax:" />
-      <Label layoutX="176.0" layoutY="218.0" text="\$4.5" />
       <Label layoutX="52.0" layoutY="127.0" text="Basket Subtotal" />
       <TextField fx:id="productID1" layoutX="167.0" layoutY="123.0" prefHeight="26.0" prefWidth="260.0" text="100" />
+      <TextField fx:id="taxField" layoutX="122.0" layoutY="214.0" />
    </children>
 </AnchorPane>

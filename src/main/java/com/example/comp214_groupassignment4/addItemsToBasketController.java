@@ -20,7 +20,7 @@ public class addItemsToBasketController {
     public Button addItemBtn;
 
 @FXML
-    public TextField basketId_txtfld, productid_txtfld, price_txtfld, quantity_txtfld, size_txtfld, form_txtfld;
+    public TextField basketId_txtfld, productid_txtfld, price_txtfld, quantity_txtfld, size_txtfld, form_fld;
 
 
     public void OnSAveChangesButton(ActionEvent actionEvent) throws SQLException{
@@ -42,7 +42,7 @@ public class addItemsToBasketController {
             statement.setInt(3, parseInt(price_txtfld.getId()));
             statement.setInt(4, parseInt(quantity_txtfld.getId()));
             statement.setInt(5, parseInt(size_txtfld.getId()));
-            statement.setInt(6, parseInt(form_txtfld.getId()));
+            statement.setInt(6, parseInt(form_fld.getId()));
             System.out.println(query);
             int count = statement.executeUpdate();
             if (count == 1)

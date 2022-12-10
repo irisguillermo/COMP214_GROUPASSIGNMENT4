@@ -39,7 +39,7 @@ public class BBCoffeeMenu {
 
     public void AddItemsToBasketBtn(ActionEvent actionEvent) throws SQLException, IOException {
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(addItemsToBasket.class.getResource("addItemsToBasket.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(addItemsToBasketController.class.getResource("addItemsToBasket.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         stage.setTitle("Task 5: Add Item To Basket");
         stage.setScene(scene);
@@ -48,9 +48,9 @@ public class BBCoffeeMenu {
 
 
     public void checkSaleProductsBtn(ActionEvent actionEvent) throws IOException {
-        Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(CheckSale.class.getResource("CheckSale.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(CheckSaleController.class.getResource("CheckSale.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        Stage stage = new Stage();
         stage.setTitle("Task 6: Check Sale");
         stage.setScene(scene);
         stage.show();

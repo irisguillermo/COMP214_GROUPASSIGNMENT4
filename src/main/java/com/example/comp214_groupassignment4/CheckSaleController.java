@@ -1,54 +1,31 @@
 package com.example.comp214_groupassignment4;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 
-import javafx.event.ActionEvent;
-import javafx.scene.control.*;
 import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.security.cert.Extension;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static java.lang.Integer.parseInt;
-public class CheckSale {
 
-    int product_ID;
+public class CheckSaleController {
 
-    int date;
+    public Button check_btn;
+
+    public  DatePicker datePicker;
 
     public TextField productID;
 
-    public DatePicker datePicker;
-    public Button check_btn;
 
-public CheckSale(int product_ID, int date)
-{
-    this.product_ID = product_ID;
-    this.date = date;
-}
-
-    public int getProduct_ID() {
-        return product_ID;
-    }
-
-    public void setProduct_ID(int product_ID) {
-        this.product_ID = product_ID;
-    }
-
-    public int getDate() {
-        return date;
-    }
-
-    public void setDate(int date) {
-        this.date = date;
-    }
-
-
-
-
-    public void checkSaleButton(ActionEvent actionEvent)throws  SQLException {
+    public void checkSaleButton(ActionEvent actionEvent) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
         try
@@ -113,4 +90,3 @@ public CheckSale(int product_ID, int date)
     }
 
 }
-

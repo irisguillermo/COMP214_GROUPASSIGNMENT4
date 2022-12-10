@@ -17,15 +17,15 @@
             <Font name="Tahoma" size="35.0" />
          </font>
       </Text>
-      <Button fx:id="createNewProduct" layoutX="50.0" layoutY="206.0" mnemonicParsing="false" onAction="#createNewProductBtn" prefHeight="26.0" prefWidth="223.0" text="Create New Product">
+      <Button fx:id="createNewProduct" layoutX="50.0" layoutY="193.0" mnemonicParsing="false" onAction="#createNewProductBtn" prefHeight="26.0" prefWidth="223.0" text="Create New Product">
          <font>
             <Font name="Tahoma" size="13.0" />
          </font></Button>
-      <Button fx:id="calculateTaxForOrder" layoutX="50.0" layoutY="265.0" mnemonicParsing="false" onAction="#calculateTaxForOrderBtn" prefHeight="26.0" prefWidth="223.0" text="Calculate Tax for Order" />
+      <Button fx:id="calculateTaxForOrder" layoutX="50.0" layoutY="246.0" mnemonicParsing="false" onAction="#calculateTaxForOrderBtn" prefHeight="26.0" prefWidth="223.0" text="Calculate Tax for Order" />
       <Button fx:id="updateOrderStatus" layoutX="326.0" layoutY="143.0" mnemonicParsing="false" onAction="#updateOrderStatusBtn" prefHeight="26.0" prefWidth="223.0" text="Update Order Status" />
-      <Button fx:id="AddItemsToBasket" layoutX="326.0" layoutY="206.0" mnemonicParsing="false" onAction="#AddItemsToBasketBtn" prefHeight="26.0" prefWidth="223.0" text="Add Items to Basket" />
-      <Button fx:id="checkSaleProducts" layoutX="326.0" layoutY="265.0" mnemonicParsing="false" onAction="#checkSaleProductsBtn" prefHeight="26.0" prefWidth="223.0" text="Check Sale Products" />
+      <Button fx:id="AddItemsToBasket" layoutX="326.0" layoutY="193.0" mnemonicParsing="false" onAction="#AddItemsToBasketBtn" prefHeight="26.0" prefWidth="223.0" text="Add Items to Basket" />
+      <Button fx:id="checkSaleProducts" layoutX="326.0" layoutY="246.0" mnemonicParsing="false" onAction="#checkSaleProductsBtn" prefHeight="26.0" prefWidth="223.0" text="Check Sale Products" />
       <Button fx:id="reportItemInStock" layoutX="189.0" layoutY="328.0" mnemonicParsing="false" onAction="#reportItemInStockBtn" prefHeight="26.0" prefWidth="223.0" text="Report - Item In Stock" />
-      <Button fx:id="reportCalculateTotalSpending" layoutX="189.0" layoutY="383.0" mnemonicParsing="false" onAction="#reportCalculateTotalSpendingBtn" prefHeight="26.0" prefWidth="223.0" text="Report - Calculate Total Spending" />
+      <Button fx:id="reportCalculateTotalSpending" layoutX="189.0" layoutY="376.0" mnemonicParsing="false" onAction="#reportCalculateTotalSpendingBtn" prefHeight="26.0" prefWidth="223.0" text="Report - Calculate Total Spending" />
    </children>
 </AnchorPane>

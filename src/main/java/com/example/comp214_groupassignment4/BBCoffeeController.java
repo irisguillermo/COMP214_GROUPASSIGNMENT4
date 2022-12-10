@@ -35,7 +35,6 @@ public class BBCoffeeController {
     public TableColumn s_item_col, s_name_col, s_options_col, s_qty_col, s_price_col, s_total_col,s_subtotal_col;
 
 
-
     public void onUpdateBasketButtonClick(ActionEvent actionEvent) throws SQLException {
         System.out.println(item_code.getText());
         System.out.println(item_name.getText());

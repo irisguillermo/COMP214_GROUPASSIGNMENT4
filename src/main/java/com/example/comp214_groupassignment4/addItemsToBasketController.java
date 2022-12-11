@@ -32,16 +32,18 @@ public class addItemsToBasketController {
             connection = DBUtil.dbConnect();
             connection.setAutoCommit(false);
 
-            String query = "{CALL BASKET_ADD_SP (?, ? , ?, ? ,? ,?)}";
+            String query = "{CALL BASKET_ADD_SP (?, ?, ? , ?, ? ,? ,?)}";
             statement = connection.prepareCall(query);
             statement =connection.prepareStatement(query);
 
+
             statement.setInt(1, parseInt(productID_txtfld.getText()));
-            statement.setInt(2, (int) Double.parseDouble(price_txtfld.getText()));
+            statement.setDouble(2, Double.parseDouble (price_txtfld.getText()));
             statement.setInt(3, parseInt(quantity_txtfld.getText()));
             statement.setInt(4, parseInt(basketId_txtfld.getText()));
             statement.setInt(5, parseInt(size_txtfld.getText()));
             statement.setInt(6, parseInt(form_fld.getText()));
+
 
 
             int count = statement.executeUpdate();

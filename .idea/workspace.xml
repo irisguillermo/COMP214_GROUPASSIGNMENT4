@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="added Heba's codes">
+    <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="changes with additems">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/AddShippingInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/BBCoffeeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckSaleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/AddShippingInfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/AddShippingInfo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670682723505</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes with additems">
+      <created>1670717055509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670717055509</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EditCreateProfile file completed - except code. GUI completed for editcreateprofile" />
     <MESSAGE value="added Heba's codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Heba's codes" />
+    <MESSAGE value="changes with additems" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes with additems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -160,6 +174,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.reflect.InvocationTargetException" package="java.lang.reflect" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchMethodException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

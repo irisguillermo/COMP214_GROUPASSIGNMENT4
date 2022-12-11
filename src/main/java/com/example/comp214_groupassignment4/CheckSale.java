@@ -15,77 +15,53 @@ import java.sql.SQLException;
 
 import static java.lang.Integer.parseInt;
 
-public class CheckSale{
+public class CheckSale {
 
     public Button check_btn;
 
-    public  DatePicker datePicker;
+    public DatePicker datePicker;
 
     public TextField productID;
 
 
     public void checkSaleButton(ActionEvent actionEvent) throws SQLException {
-        Connection connection = null;
-        PreparedStatement statement = null;
-        try
-        {
-            connection = DBUtil.dbConnect();
+        Connection connection = DBUtil.dbConnect();
+        PreparedStatement statement = connection.prepareStatement("{(CALL CK_SALE_SF (? , ? )}");
+        // PreparedStatement statement = null;
+        try {
+
             connection.setAutoCommit(false);
 
-            String query = "(CK_SALE_SF (? , ? ))";
-            statement = connection.prepareCall(query);
-
-            query = "(CK_SALE_SF (? , ? ,?))";
-            statement = connection.prepareCall(query);
+            // String query = "{CALL BASKET_ADD_SP (?, ?, ? , ?, ? ,? ,?)}";
+            //  statement = connection.prepareCall(query);
+            //  statement =connection.prepareStatement(query);
 
 
             statement.setInt(1, parseInt(productID.getText()));
             statement.setString(2, (String.valueOf(datePicker.getValue())));
-            statement.executeUpdate();
-            System.out.println(query);
-            int count = statement.executeUpdate();
-            if (count == 1)
-            {
-                this.alert("OnSale", "Product is ON SALE!!", Alert.AlertType.INFORMATION);
-            }else
-            {
-                this.alert("NotOnSale", "Product has Great Deal!", Alert.AlertType.ERROR);
-            }
-        }catch (Exception e)
-        {
+
+
+            statement.addBatch();
+
+
+            //statement.executeBatch();
+
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally
-        {
-            if (null != statement)
-            {
-                try
-                {
+        } finally {
+            if (null != statement) {
+                try {
                     statement.close();
-                }catch (SQLException e)
-                {
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-            if (null != connection)
-            {
-                try
-                {
-                    connection.close();
-                }catch (SQLException e)
-                {
-                    e.printStackTrace();
-                }
-            }
+
         }
 
     }
 
-    private void alert(String title, String message, Alert.AlertType alertType) {
-        Alert alert = new Alert(alertType);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
+    private void alert(String success, String s, Alert.AlertType information) {
 
+    }
 }

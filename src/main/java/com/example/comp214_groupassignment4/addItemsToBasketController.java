@@ -48,14 +48,7 @@ public class addItemsToBasketController {
             statement.addBatch();
 
 
-            statement.executeBatch();
-
-            int count = statement.executeUpdate();
-            if (count == 1) {
-                this.alert("Success", "Items added to basket!!", Alert.AlertType.INFORMATION);
-            } else {
-                this.alert("Failure", "Items cannot be added!", Alert.AlertType.ERROR);
-            }
+            //statement.executeBatch();
 
         }catch (Exception e)
         {

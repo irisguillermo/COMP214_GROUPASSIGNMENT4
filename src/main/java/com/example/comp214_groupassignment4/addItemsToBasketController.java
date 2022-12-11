@@ -50,7 +50,12 @@ public class addItemsToBasketController {
 
             statement.executeBatch();
 
-            // int count = statement.executeUpdate();
+            int count = statement.executeUpdate();
+            if (count == 1) {
+                this.alert("Success", "Items added to basket!!", Alert.AlertType.INFORMATION);
+            } else {
+                this.alert("Failure", "Items cannot be added!", Alert.AlertType.ERROR);
+            }
 
         }catch (Exception e)
         {
@@ -65,6 +70,10 @@ public class addItemsToBasketController {
             }
 
         }
+
+    }
+
+    private void alert(String success, String s, Alert.AlertType information) {
 
     }
 

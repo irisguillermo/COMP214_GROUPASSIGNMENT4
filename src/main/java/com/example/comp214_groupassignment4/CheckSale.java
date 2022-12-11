@@ -21,16 +21,14 @@ public class CheckSale {
 
     public TextField productID;
 
-    @FXML
     private Label saleStatus;
+
 
 
 
     public void checkSaleButton(ActionEvent actionEvent) throws SQLException {
         Connection connection = DBUtil.dbConnect();
         PreparedStatement statement = connection.prepareStatement("{(CALL CK_SALE_SF (? , ? )}");
-        CallableStatement cs = null;
-        // PreparedStatement statement = null;
         try {
 
             connection.setAutoCommit(false);
@@ -53,6 +51,7 @@ public class CheckSale {
         }
 
     }
+
 
 
 }

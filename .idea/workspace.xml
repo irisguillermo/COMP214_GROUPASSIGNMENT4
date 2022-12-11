@@ -7,9 +7,6 @@
     <list default="true" id="8355e2e1-7d95-4346-82ec-8af0b9dc5562" name="Changes" comment="checksale and additems running!! properly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/CheckSale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comp214_groupassignment4/addItemsToBasketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/CheckSale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/comp214_groupassignment4/CheckSale.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670729946178</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="checksale and additems running!! properly">
+      <created>1670799598603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670799598603</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

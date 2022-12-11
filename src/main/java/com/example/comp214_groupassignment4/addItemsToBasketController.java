@@ -22,7 +22,7 @@ public class addItemsToBasketController {
     public Button addItemBtn;
 
 @FXML
-    public TextField basketId_txtfld, productID_txtfld, price_txtfld, quantity_txtfld, size_txtfld, form_fld;
+    public TextField productID_txtfld, price_txtfld,  quantity_txtfld, basketId_txtfld,   size_txtfld, form_fld;
 
 
     public void OnSAveChangesButton(ActionEvent actionEvent) {
@@ -32,21 +32,18 @@ public class addItemsToBasketController {
             connection = DBUtil.dbConnect();
             connection.setAutoCommit(false);
 
-            String query = "{BASKET_ADD_SP (?, ? , ?, ? ,? ,?)}";
+            String query = "{CALL BASKET_ADD_SP (?, ? , ?, ? ,? ,?)}";
             statement = connection.prepareCall(query);
             statement =connection.prepareStatement(query);
 
-            query = "{BASKET_ADD_SP (?, ? , ?, ? ,? ,?)}";
-            statement = connection.prepareCall(query);
+            statement.setInt(1, parseInt(productID_txtfld.getText()));
+            statement.setInt(2, (int) Double.parseDouble(price_txtfld.getText()));
+            statement.setInt(3, parseInt(quantity_txtfld.getText()));
+            statement.setInt(4, parseInt(basketId_txtfld.getText()));
+            statement.setInt(5, parseInt(size_txtfld.getText()));
+            statement.setInt(6, parseInt(form_fld.getText()));
 
 
-            statement.setInt(1, Integer.parseInt(productID_txtfld.getId()));
-            statement.setInt(2, parseInt(basketId_txtfld.getId()));
-            statement.setInt(3, parseInt(price_txtfld.getId()));
-            statement.setInt(4, parseInt(quantity_txtfld.getId()));
-            statement.setInt(5, parseInt(size_txtfld.getId()));
-            statement.setInt(6, parseInt(form_fld.getId()));
-            System.out.println(query);
             int count = statement.executeUpdate();
             if (count == 1)
             {

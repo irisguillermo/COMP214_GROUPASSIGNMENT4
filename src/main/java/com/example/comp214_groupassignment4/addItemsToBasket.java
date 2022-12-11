@@ -1,10 +1,6 @@
 package com.example.comp214_groupassignment4;
 
-import javafx.event.ActionEvent;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import static java.lang.Integer.parseInt;
 
 public class addItemsToBasket {
     int product_ID;

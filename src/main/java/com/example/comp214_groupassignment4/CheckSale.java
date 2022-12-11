@@ -1,16 +1,14 @@
 package com.example.comp214_groupassignment4;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static java.lang.Integer.parseInt;
@@ -23,28 +21,23 @@ public class CheckSale {
 
     public TextField productID;
 
+    @FXML
+    private Label saleStatus;
+
+
 
     public void checkSaleButton(ActionEvent actionEvent) throws SQLException {
         Connection connection = DBUtil.dbConnect();
         PreparedStatement statement = connection.prepareStatement("{(CALL CK_SALE_SF (? , ? )}");
+        CallableStatement cs = null;
         // PreparedStatement statement = null;
         try {
 
             connection.setAutoCommit(false);
-
-            // String query = "{CALL BASKET_ADD_SP (?, ?, ? , ?, ? ,? ,?)}";
-            //  statement = connection.prepareCall(query);
-            //  statement =connection.prepareStatement(query);
-
-
             statement.setInt(1, parseInt(productID.getText()));
             statement.setString(2, (String.valueOf(datePicker.getValue())));
-
-
             statement.addBatch();
 
-
-            //statement.executeBatch();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,7 +54,5 @@ public class CheckSale {
 
     }
 
-    private void alert(String success, String s, Alert.AlertType information) {
 
-    }
 }

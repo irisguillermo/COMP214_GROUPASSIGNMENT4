@@ -1,16 +1,13 @@
 package com.example.comp214_groupassignment4;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static java.lang.Integer.parseInt;
@@ -32,10 +29,6 @@ public class addItemsToBasketController {
         try{
 
             connection.setAutoCommit(false);
-
-            // String query = "{CALL BASKET_ADD_SP (?, ?, ? , ?, ? ,? ,?)}";
-            //  statement = connection.prepareCall(query);
-            //  statement =connection.prepareStatement(query);
 
 
             statement.setInt(1, parseInt(productID_txtfld.getText()));

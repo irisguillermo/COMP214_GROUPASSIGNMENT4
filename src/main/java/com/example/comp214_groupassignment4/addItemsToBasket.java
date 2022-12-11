@@ -11,7 +11,7 @@ public class addItemsToBasket {
 
     int basket_ID;
 
-    int item_price;
+    double item_price;
 
     int item_quantity;
 
@@ -19,7 +19,7 @@ public class addItemsToBasket {
 
     int item_form;
 
-    public addItemsToBasket (int product_ID, int item_price, int item_quantity, int basket_ID,  int item_size, int item_form)
+    public addItemsToBasket (int product_ID, double item_price, int item_quantity, int basket_ID,  int item_size, int item_form)
     {
         this.product_ID = product_ID;
         this.basket_ID = basket_ID;
@@ -45,11 +45,11 @@ public class addItemsToBasket {
         this.basket_ID = basket_ID;
     }
 
-    public int getItem_price() {
+    public double getItem_price() {
         return item_price;
     }
 
-    public void setItem_price(int item_price) {
+    public void setItem_price(double item_price) {
         this.item_price = item_price;
     }
 

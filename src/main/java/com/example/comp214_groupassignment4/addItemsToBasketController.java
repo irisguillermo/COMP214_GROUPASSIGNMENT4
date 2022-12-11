@@ -21,39 +21,37 @@ public class addItemsToBasketController {
 
     public Button addItemBtn;
 
-@FXML
+    @FXML
     public TextField productID_txtfld, price_txtfld,  quantity_txtfld, basketId_txtfld,   size_txtfld, form_fld;
 
 
-    public void OnSAveChangesButton(ActionEvent actionEvent) {
-        Connection connection = null;
-        PreparedStatement statement = null;
+    public void OnSAveChangesButton(ActionEvent actionEvent) throws SQLException {
+        Connection connection = DBUtil.dbConnect();
+        PreparedStatement statement = connection.prepareStatement("{CALL BASKET_ADD_SP (?, ?, ?, ?, ? ,?)}");
+        // PreparedStatement statement = null;
         try{
-            connection = DBUtil.dbConnect();
+
             connection.setAutoCommit(false);
 
-            String query = "{CALL BASKET_ADD_SP (?, ?, ? , ?, ? ,? ,?)}";
-            statement = connection.prepareCall(query);
-            statement =connection.prepareStatement(query);
+            // String query = "{CALL BASKET_ADD_SP (?, ?, ? , ?, ? ,? ,?)}";
+            //  statement = connection.prepareCall(query);
+            //  statement =connection.prepareStatement(query);
 
 
             statement.setInt(1, parseInt(productID_txtfld.getText()));
-            statement.setDouble(2, Double.parseDouble (price_txtfld.getText()));
+            statement.setDouble(2, Double.parseDouble(price_txtfld.getText()));
             statement.setInt(3, parseInt(quantity_txtfld.getText()));
             statement.setInt(4, parseInt(basketId_txtfld.getText()));
             statement.setInt(5, parseInt(size_txtfld.getText()));
             statement.setInt(6, parseInt(form_fld.getText()));
 
+            statement.addBatch();
 
 
-            int count = statement.executeUpdate();
-            if (count == 1)
-            {
-                this.alert("Success", "Item has been added to basket", Alert.AlertType.INFORMATION);
-            }else
-            {
-                this.alert("Failure", "Item cannot be added to basket", Alert.AlertType.ERROR);
-            }
+            statement.executeBatch();
+
+            // int count = statement.executeUpdate();
+
         }catch (Exception e)
         {
             e.printStackTrace();
@@ -61,23 +59,14 @@ public class addItemsToBasketController {
             if(null != statement){
                 try {
                     statement.close();
-            }catch (SQLException e){
+                }catch (SQLException e){
                     e.printStackTrace();
                 }
             }
-            if(null != connection){
-                try{
-                    connection.close();
-                }catch (SQLException e)
-                {
-                    e.printStackTrace();
-                }
-            }
+
         }
 
     }
 
-    private void alert(String title, String message, Alert.AlertType alertType) {
-    }
 
 }

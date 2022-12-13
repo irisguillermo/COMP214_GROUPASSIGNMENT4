@@ -55,7 +55,7 @@ public class addNewProduct {
             statement.setString(3, productImage.getText());
             statement.setDouble(4, Double.parseDouble(productPrice.getText()));
             statement.setInt(5, activeChecked);
-            statement.executeUpdate();
+        //    statement.executeUpdate();
             int count = statement.executeUpdate();
             if (count == 1) {
                 this.alert("Success", "New product has been created successfully", Alert.AlertType.INFORMATION);

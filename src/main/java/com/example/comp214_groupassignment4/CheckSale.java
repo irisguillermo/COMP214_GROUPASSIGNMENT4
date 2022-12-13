@@ -6,10 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 import static java.lang.Integer.parseInt;
 
@@ -21,6 +18,7 @@ public class CheckSale {
 
     public TextField productID;
 
+    @FXML
     private Label saleStatus;
 
 
@@ -51,7 +49,5 @@ public class CheckSale {
         }
 
     }
-
-
 
 }

@@ -34,7 +34,6 @@ public class CheckSale {
             statement.registerOutParameter(1, Types.VARCHAR);
             statement.executeUpdate();
             String result = statement.getString(1);
-            System.out.println(result);
             saleStatus.setText(result);
 
         } catch (Exception e) {

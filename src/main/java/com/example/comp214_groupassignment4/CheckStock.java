@@ -31,7 +31,7 @@ public class CheckStock {
             cs.registerOutParameter(2,Types.VARCHAR);
         cs.execute();
         String result = cs.getString(2);
-        System.out.println(result);
+        //System.out.println(result);
             // Set the text of the stockStatus text field.
             stockStatus.setText(result);
         } catch (Exception e) {

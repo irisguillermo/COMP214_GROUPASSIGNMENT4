@@ -6,10 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 import static java.lang.Integer.parseInt;
 
@@ -21,21 +18,24 @@ public class CheckSale {
 
     public TextField productID;
 
-    private Label saleStatus;
+    public Label saleStatus;
 
 
 
 
     public void checkSaleButton(ActionEvent actionEvent) throws SQLException {
         Connection connection = DBUtil.dbConnect();
-        PreparedStatement statement = connection.prepareStatement("{(CALL CK_SALE_SF (? , ? )}");
+        CallableStatement statement = null;
         try {
-
+            statement = connection.prepareCall("{? = call CK_SALE_SF(?,TO_DATE(?,'YYYY-MM-DD'))}");
             connection.setAutoCommit(false);
-            statement.setInt(1, parseInt(productID.getText()));
-            statement.setString(2, (String.valueOf(datePicker.getValue())));
-            statement.addBatch();
-
+            statement.setInt(2, parseInt(productID.getText()));
+            statement.setString(3, (String.valueOf(datePicker.getValue())));
+            statement.registerOutParameter(1, Types.VARCHAR);
+            statement.executeUpdate();
+            String result = statement.getString(1);
+            System.out.println(result);
+            saleStatus.setText(result);
 
         } catch (Exception e) {
             e.printStackTrace();

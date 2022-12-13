@@ -49,9 +49,9 @@ public class BBCoffeeController {
     }
 
     public void onEmptyBasketButtonClick(ActionEvent actionEvent) throws SQLException {
-         BBCoffee item_code = (BBCoffee) itemTable.getSelectionModel().getSelectedItem();
-         DBUtil.deleteData("Item-Table", (item_code.getItem_code()));
-         populateData();
+        BBCoffee item_code = (BBCoffee) itemTable.getSelectionModel().getSelectedItem();
+        DBUtil.deleteData("Item-Table", (item_code.getItem_code()));
+        populateData();
 
     }
 
